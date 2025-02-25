@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     float horizontal;
-    float vertical;
 
     public float runSpeed = 5f;
     private bool m_Grounded;
@@ -34,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         horizontal = Input.GetAxisRaw("Horizontal");
+    
         if (horizontal < 0) {
             spriteRenderer.flipX = true;
         } else {
@@ -53,7 +53,8 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         player.linearVelocity = new Vector2(horizontal * runSpeed, player.linearVelocity.y);
-    
+
+
 		bool wasGrounded = m_Grounded;
 ;
         m_Grounded = false;
@@ -74,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Landed() {
         animator.SetBool("jump", false);
+        Debug.Log("Landed");
     }
+
 
 }
