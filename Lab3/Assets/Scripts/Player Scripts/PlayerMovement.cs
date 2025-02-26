@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("horizontal", horizontal);
         if (Input.GetKeyDown("space") && !animator.GetBool("jump"))
         {
-            player.AddForce(Vector2.up * 2000);
+            player.AddForce(Vector2.up * 2250);
             animator.SetBool("jump",true);
             Debug.Log("space key was pressed");
         }

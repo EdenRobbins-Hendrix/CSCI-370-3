@@ -13,13 +13,14 @@ public class PlayerTracking : MonoBehaviour
     private float dBound;
 
     // Use this for initialization
+   
+    // Use this for initialization
     void Start()
     {
         lBound = hBoundaryPercent * Camera.main.pixelWidth;
         rBound = Camera.main.pixelWidth - lBound;
         dBound = vBoundaryPercent * Camera.main.pixelHeight;
         uBound = Camera.main.pixelHeight - dBound;
-        playerSprite = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
