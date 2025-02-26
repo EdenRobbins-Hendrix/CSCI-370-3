@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerTracking : MonoBehaviour
 {
  public GameObject playerSprite;
-    public float boundaryPercent;
+    public float hBoundaryPercent;
+    public float vBoundaryPercent;
     public float easing;
 
     private float lBound;
@@ -14,9 +15,9 @@ public class PlayerTracking : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        lBound = boundaryPercent * Camera.main.pixelWidth;
+        lBound = hBoundaryPercent * Camera.main.pixelWidth;
         rBound = Camera.main.pixelWidth - lBound;
-        dBound = boundaryPercent * Camera.main.pixelHeight;
+        dBound = vBoundaryPercent * Camera.main.pixelHeight;
         uBound = Camera.main.pixelHeight - dBound;
         playerSprite = GetComponent<GameObject>();
     }
