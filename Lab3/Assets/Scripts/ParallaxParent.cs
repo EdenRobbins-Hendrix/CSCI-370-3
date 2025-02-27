@@ -19,7 +19,7 @@ public class ParallaxParent : MonoBehaviour
             ps.sortOrder = backgrounds.Length - i;
             ps.parallaxSpeed = (1.0f + i) / backgrounds.Length;
             ps.Setup();
-        }   
+        } 
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
