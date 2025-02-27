@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
                 doubleJump = true;
             }
             else if (manager.carrots > 0) {
-                player.AddForce(Vector2.up * 2250);
+                Debug.Log("Eating carrot");
                 manager.DecrementCarrot();
                 doubleJump = false;
             }
