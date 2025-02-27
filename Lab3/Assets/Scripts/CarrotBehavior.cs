@@ -25,8 +25,8 @@ public class CarrotBehavior : MonoBehaviour
             effect.Play();
             Debug.Log("Predator!");
             timer.Tick(goalTime, self);
-            self.SetActive(false);
             manager.GetCarrot();
+            self.SetActive(false);
         }
     }
 }

@@ -14,11 +14,14 @@ public class PlayerMovement : MonoBehaviour
     private bool m_Grounded;
 
     public UnityEvent OnLandEvent;
+    bool doubleJump;
+    public GameManager manager;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        doubleJump = false;
         player = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -40,8 +43,15 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
         animator.SetFloat("horizontal", horizontal);
-        if (Input.GetKeyDown("space") && !animator.GetBool("jump"))
+        if (Input.GetKeyDown("space") && (!animator.GetBool("jump") || (doubleJump && manager.carrots > 0 )))
         {
+            if (!doubleJump) {
+                doubleJump = true;
+            }
+            else if (manager.carrots > 0) {
+                manager.DecrementCarrot();
+                doubleJump = false;
+            }
             player.AddForce(Vector2.up * 2250);
             animator.SetBool("jump",true);
             Debug.Log("space key was pressed");
@@ -75,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Landed() {
         animator.SetBool("jump", false);
+        doubleJump = false;
         Debug.Log("Landed");
     }
 

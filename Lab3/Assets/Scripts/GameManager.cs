@@ -4,8 +4,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI collectionCount;
+    public TextMeshProUGUI carrotCount;
     int collected;
-    int carrots;
+    public int carrots;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,5 +27,11 @@ public class GameManager : MonoBehaviour
 
     public void GetCarrot() {
         carrots++;
+        carrotCount.text = "Carrot: " + carrots;
+    }
+
+    public void DecrementCarrot() {
+        carrots--;
+        carrotCount.text = "Carrot: " + carrots;
     }
 }
