@@ -6,6 +6,7 @@ public class CarrotBehavior : MonoBehaviour
     public GameManager manager;
     public AudioSource effect;
     float goalTime = 10;
+    public CustomTimer timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +24,9 @@ public class CarrotBehavior : MonoBehaviour
             effect.Play();
             Debug.Log("Predator!");
             manager.GetCarrot();
+            timer.Tick(goalTime, self);
             self.SetActive(false);
+
         }
     }
 }
