@@ -22271,11 +22271,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b3dae70fb213043b084a2a4872596f5f, type: 3}
+  m_Resource: {fileID: 8300000, guid: b3dae70fb213043b084a2a4872596f5f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.841
+  m_Pitch: 0.17
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -22373,6 +22373,7 @@ MonoBehaviour:
   self: {fileID: 1701272285}
   manager: {fileID: 2116931342}
   effect: {fileID: 1701272287}
+  timer: {fileID: 2108830390}
 --- !u!61 &1701272289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22610,6 +22611,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910185036}
   m_CullTransparentMesh: 1
+--- !u!1 &2108830389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108830391}
+  - component: {fileID: 2108830390}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2108830390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108830389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c405f439627a004dbf4a82fcc2acccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2108830391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108830389}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.572277, y: -3.6600273, z: -0.021472227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2116931340
 GameObject:
   m_ObjectHideFlags: 0
@@ -22666,3 +22711,4 @@ SceneRoots:
   - {fileID: 198930466}
   - {fileID: 272115423}
   - {fileID: 2116931341}
+  - {fileID: 2108830391}
