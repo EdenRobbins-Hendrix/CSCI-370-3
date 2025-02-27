@@ -22165,6 +22165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50817ae2fb1c1b42bcf4766640cd91d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectionCount: {fileID: 1910185038}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
