@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class GetCollected : MonoBehaviour
 {
+    public GameObject self;
+    public GameManager manager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,8 +17,14 @@ public class GetCollected : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (
+        Debug.Log("Who's there!");
+        if (collision.rigidbody.CompareTag("Player")) {
+            manager.Collect();
+            Destroy(self.GetComponent<SpriteRenderer>());
+            Debug.Log("Daddy!");
+        }
     }
+    
 }

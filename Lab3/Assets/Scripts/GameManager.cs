@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void Collect() {
+    public void Collect() {
         collected++;
     }
 }
