@@ -5,10 +5,12 @@ public class CarrotBehavior : MonoBehaviour
     public GameObject self;
     public GameManager manager;
     public AudioSource effect;
-    float goalTime = 10;
+    float goalTime;
+    public TimerCustom timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        goalTime = 5;
     }
 
     // Update is called once per frame
@@ -22,23 +24,9 @@ public class CarrotBehavior : MonoBehaviour
         if (collision.rigidbody.CompareTag("Player")) {
             effect.Play();
             Debug.Log("Predator!");
+            timer.Tick(goalTime, self);
             self.SetActive(false);
             manager.GetCarrot();
-            StartCoroutine("Tick");
         }
-    }
-
-    void Tick() {
-        if (goalTime <= 0) {
-            EndTick();
-        }
-        else {
-            goalTime -= Time.deltaTime;
-        }
-    }
-    void EndTick () {
-        StopCoroutine("Tick");
-        goalTime = 10;
-        self.SetActive(true);
     }
 }
