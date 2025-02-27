@@ -405,6 +405,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1805082216}
     m_Modifications:
+    - target: {fileID: 2984573921804875900, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+    - target: {fileID: 2984573921804875900, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1300910964700815074, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+    - target: {fileID: 2984573921804875900, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8308217732292985907, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_Name
       value: Button
