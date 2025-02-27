@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     int collected;
     public int carrots;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void OnAwake() {
+        
+    }
     void Start()
     {
         collected = 0;

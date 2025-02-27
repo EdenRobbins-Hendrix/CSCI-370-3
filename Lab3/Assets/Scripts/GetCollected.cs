@@ -26,6 +26,7 @@ public class GetCollected : MonoBehaviour
             Destroy(self.GetComponent<SpriteRenderer>());
             Destroy(self.GetComponent<Collider2D>());
             effect.Play();
+            self.GetComponent<ParticleSystem>().Play();
             Debug.Log("Daddy!");
         }
     }
