@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 7f4dc74417f0147a5804b21c72feb54c
+guid: b324a4685d480b346b084e8a5dbacbde
 AssetOrigin:
   serializedVersion: 1
-  productId: 64734
-  packageName: Pixel Font - Tripfive
-  packageVersion: 2.0
-  assetPath: Assets/Pixel Font - Tripfive/Textures & Materials/Tripfive-OL.png
-  uploadId: 193719
+  productId: 140059
+  packageName: Free Pixel Font - Thaleah
+  packageVersion: 1.1
+  assetPath: Assets/Thaleah_PixelFont/Materials/Thaleah_DemoBackground.png
+  uploadId: 303939
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,16 +46,16 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -79,7 +79,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
