@@ -5,6 +5,7 @@ public class GetCollected : MonoBehaviour
 {
     public GameObject self;
     public GameManager manager;
+    public AudioSource effect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +25,7 @@ public class GetCollected : MonoBehaviour
             manager.Collect();
             Destroy(self.GetComponent<SpriteRenderer>());
             Destroy(self.GetComponent<Collider2D>());
+            effect.Play();
             Debug.Log("Daddy!");
         }
     }
