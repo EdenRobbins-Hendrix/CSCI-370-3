@@ -600,7 +600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 737004763}
   hBoundaryPercent: 0.6
-  vBoundaryPercent: 0.2
+  vBoundaryPercent: 0.4
   easing: 0.0005
 --- !u!1 &619394800
 GameObject:
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4e1c8a350fe2448b72ec7267cd77be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 5
+  runSpeed: 7.5
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
