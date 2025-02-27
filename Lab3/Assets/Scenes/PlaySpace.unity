@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4e1c8a350fe2448b72ec7267cd77be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 7.5
+  runSpeed: 6.5
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
