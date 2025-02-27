@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayTransition : MonoBehaviour
 {
     public AudioSource effect;
-    public MainCamera cam;
+    public MusicPlayer jb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,7 +19,7 @@ public class PlayTransition : MonoBehaviour
     public void ReactToClick() {
         effect.Play();
         Initiate.Fade("PlaySpace", Color.black, 1);
-        cam.ToPlaySpace();
+        jb.ToPlaySpace();
     }
 }
 
