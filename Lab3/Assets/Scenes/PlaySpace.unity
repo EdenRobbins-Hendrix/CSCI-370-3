@@ -21653,6 +21653,14 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1517992971373121856, guid: 27d0f622093a5394986fc533f72ec041, type: 3}
+      propertyPath: UVModule.frameOverTime.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730029065170038103, guid: 27d0f622093a5394986fc533f72ec041, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6697291720923679344, guid: 27d0f622093a5394986fc533f72ec041, type: 3}
       propertyPath: m_Name
       value: Goal
