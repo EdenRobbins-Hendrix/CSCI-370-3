@@ -451,9 +451,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 737004763}
-  hBoundaryPercent: 0.45
-  vBoundaryPercent: 0.45
-  easing: 0.001
+  hBoundaryPercent: 0.6
+  vBoundaryPercent: 0.2
+  easing: 0.0005
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
