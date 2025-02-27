@@ -16,8 +16,11 @@ public class ParallaxScrolling : MonoBehaviour
     private float viewZone = 10;
     private int leftIndex;
     private int rightIndex;
+    private int upIndex;
+    private int downIndex;
 
     private float lastCameraX;
+    private float lastCameraY;
 
 
     void Awake()
@@ -29,6 +32,7 @@ public class ParallaxScrolling : MonoBehaviour
     {
         cameraTransform = Camera.main.transform;
         lastCameraX = cameraTransform.position.x;
+        lastCameraY = cameraTransform.position.y;
         layers = new Transform[3];
 
         for (int i = 0; i < 3; i++)
@@ -72,12 +76,16 @@ public class ParallaxScrolling : MonoBehaviour
 
     }
 
+
     // Update is called once per frame
     void Update()
     {
         float deltaX = cameraTransform.position.x - lastCameraX;
+        float deltaY = cameraTransform.position.y - lastCameraY;
         transform.position += Vector3.right * (deltaX * parallaxSpeed);
+        transform.position += Vector3.up * (deltaY * parallaxSpeed);
         lastCameraX = cameraTransform.position.x;
+        lastCameraY = cameraTransform.position.y;
 
         if (cameraTransform.position.x < (layers[leftIndex].transform.position.x + viewZone))
         {
