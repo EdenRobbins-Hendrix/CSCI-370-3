@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (manager.intro){
         horizontal = Input.GetAxisRaw("Horizontal");
     
         if (horizontal < 0) {
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("jump",true);
             Debug.Log("space key was pressed");
         }
-
+}
         
     }
 

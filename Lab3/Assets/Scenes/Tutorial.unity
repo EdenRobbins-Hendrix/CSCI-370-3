@@ -486,18 +486,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use A/D or the left/right arrow keys to move
+  m_text: 'Left click to advance text
+
+
+    Use A/D or the left/right arrow keys
+    to move
 
 
     Press space to jump
 
 
-    If
-    you have carrot, you can use them to double jump
+    If you have carrot, you can use them
+    to double jump
 
 
-    Collect all baby bunnies
-    to win!'
+    Collect all baby bunnies to win!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
   m_sharedMaterial: {fileID: 477452907260433014, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
