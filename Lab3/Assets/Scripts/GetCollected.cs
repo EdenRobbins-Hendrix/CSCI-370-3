@@ -24,7 +24,10 @@ public class GetCollected : MonoBehaviour
         if (collision.rigidbody.CompareTag("Player")) {
             manager.Collect();
             Destroy(self.GetComponent<SpriteRenderer>());
-            Destroy(self.GetComponent<Collider2D>());
+            Collider2D[] colliders = self.GetComponents<Collider2D>();
+            foreach (Collider2D collider in colliders) {
+                Destroy(collider);
+            }
             effect.Play();
             self.GetComponent<ParticleSystem>().Play();
             Debug.Log("Daddy!");
