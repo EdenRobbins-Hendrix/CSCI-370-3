@@ -540,7 +540,7 @@ MonoBehaviour:
     Design and Programming by Jake Nurkin"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
-  m_sharedMaterial: {fileID: -8335021428401143945, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+  m_sharedMaterial: {fileID: 477452907260433014, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -979,11 +979,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664381255560063194, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -402
+      value: -303
       objectReference: {fileID: 0}
     - target: {fileID: 8664381255560063194, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 188.9
+      value: 211
       objectReference: {fileID: 0}
     - target: {fileID: 8664381255560063194, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
