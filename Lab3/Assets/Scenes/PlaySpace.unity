@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 286069139}
   m_Layer: 0
   m_Name: Timer
-  m_TagString: Untagged
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,6 +534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661c639ad2928f54095f7dc304f5d1f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waiter: {fileID: 0}
+  goalTime: 0
+  self: {fileID: 0}
 --- !u!4 &286069138
 Transform:
   m_ObjectHideFlags: 0
@@ -20122,8 +20125,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Daddy!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
+  m_sharedMaterial: {fileID: -3647956066173975902, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

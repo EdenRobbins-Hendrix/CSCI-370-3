@@ -6,10 +6,11 @@ public class CarrotBehavior : MonoBehaviour
     public GameManager manager;
     public AudioSource effect;
     float goalTime = 10;
-    public CustomTimer timer;
+     CustomTimer timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        timer = GameObject.FindWithTag("Timer").GetComponent<CustomTimer>();
     }
 
     // Update is called once per frame
