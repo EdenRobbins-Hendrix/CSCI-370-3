@@ -511,7 +511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 191}
+  m_AnchoredPosition: {x: -120, y: 212.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1307519118
@@ -536,8 +536,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Spriteset \"Pico 8-bit Platformer\" by Kenney\n\nScene Transitions by
     Negleft \n\nBackgrounds by CodeRedCat\n\nFont \"Thaleah Fat\" by Tiny Worlds\n\nSFX
-    by Too Tiny Labs \n\nMusic, Custom Sprites, Programming by Eden Robbins\n\nLevel
-    Design and Programming by Jake Nurkin"
+    by Too Tiny Labs \n\nTital Track vocals by Synthesizer V Mai and Weina\n\nMusic,
+    Custom Sprites, Writing, and Programming by Eden Robbins\n\nLevel Design and
+    Programming by Jake Nurkin"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
   m_sharedMaterial: {fileID: -3647956066173975902, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
