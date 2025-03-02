@@ -539,8 +539,8 @@ MonoBehaviour:
     by Too Tiny Labs \n\nMusic, Custom Sprites, Programming by Eden Robbins\n\nLevel
     Design and Programming by Jake Nurkin"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
-  m_sharedMaterial: {fileID: 477452907260433014, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
+  m_sharedMaterial: {fileID: -3647956066173975902, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -904,11 +904,11 @@ PrefabInstance:
     - target: {fileID: 2984573921804875900, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+      objectReference: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
     - target: {fileID: 2984573921804875900, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -8335021428401143945, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+      objectReference: {fileID: -3647956066173975902, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
     - target: {fileID: 2984573921804875900, guid: 92b6faa18b78a844788ff213389643fd, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0

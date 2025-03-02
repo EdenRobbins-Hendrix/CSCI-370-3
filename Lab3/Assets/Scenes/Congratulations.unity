@@ -498,8 +498,8 @@ MonoBehaviour:
   m_text: You helped the bunny find all of his children. Now they can go to where
     they all belong - home, together.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
-  m_sharedMaterial: {fileID: 477452907260433014, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
+  m_sharedMaterial: {fileID: -3647956066173975902, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -721,8 +721,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Congratulations!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
-  m_sharedMaterial: {fileID: 477452907260433014, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
+  m_sharedMaterial: {fileID: -3647956066173975902, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

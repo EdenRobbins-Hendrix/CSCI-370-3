@@ -5100,5 +5100,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496c3b71815c7304484d85359b3fea50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fontA: {fileID: 11400000, guid: 41e370218661edc4897f11f4c9c5279e, type: 2}
+  fontA: {fileID: 11400000, guid: 2f7c0e5dcdd8e744cae02f7b65b7aaf8, type: 2}
   self: {fileID: 6697291720923679344}
