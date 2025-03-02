@@ -20,7 +20,6 @@ public class GetCollected : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Who's there!");
         if (collision.rigidbody.CompareTag("Player")) {
             manager.Collect();
             Destroy(self.GetComponent<SpriteRenderer>());
@@ -30,7 +29,6 @@ public class GetCollected : MonoBehaviour
             }
             effect.Play();
             self.GetComponent<ParticleSystem>().Play();
-            Debug.Log("Daddy!");
         }
     }
     

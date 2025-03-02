@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (collected == 20 && !winstate) {
+        if (collected == 15 && !winstate) {
             winstate = true;
             Win();
         }
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void Collect() {
         collected++;
-        collectionCount.text = "Babies: " + collected + "/20";
+        collectionCount.text = "Babies: " + collected + "/15";
     }
 
     public void GetCarrot() {
@@ -65,7 +65,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartDialogue(string[] dialogue, int StartPosition, string name) {
-        Debug.Log("2");
         dialoguePanel.SetActive(true);
         nameText.text = name;
         StopAllCoroutines();
@@ -89,7 +88,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void SkipLine(){
-        Debug.Log("5");
         skipLineTriggered = true;
     }
 

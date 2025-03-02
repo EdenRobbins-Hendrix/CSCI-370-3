@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CarrotBehavior : MonoBehaviour
@@ -20,14 +21,20 @@ public class CarrotBehavior : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Who's there!");
         if (collision.rigidbody.CompareTag("Player")) {
             effect.Play();
-            Debug.Log("Predator!");
             manager.GetCarrot();
+            if (timer.IsUnityNull()) {
+                timer = GameObject.FindWithTag("Timer").GetComponent<CustomTimer>();
+            }
             timer.Tick(goalTime, self);
             self.SetActive(false);
 
         }
     }
+
+    public void UpdateTimer(CustomTimer newTimer) {
+        timer = newTimer;
+    }
+
 }

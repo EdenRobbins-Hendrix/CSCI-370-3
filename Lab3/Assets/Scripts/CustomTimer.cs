@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CustomTimer : MonoBehaviour
@@ -11,6 +12,8 @@ public class CustomTimer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (!waiter.IsUnityNull()){
+    waiter.GetComponent<CarrotBehavior>().UpdateTimer(self.GetComponent<CustomTimer>());}
     ticking = false;
     self = gameObject;    
     }
@@ -36,12 +39,14 @@ public class CustomTimer : MonoBehaviour
         else {
             GameObject next = MakeNewTimer();
             next.GetComponent<CustomTimer>().Tick(goalTime, waiter);
+
             self.tag = "Untagged"; 
         }
     }
 
     void EndTimer() {
         waiter.SetActive(true);
+        
         if (self.CompareTag("Untagged")) {
             Destroy(self);
         }

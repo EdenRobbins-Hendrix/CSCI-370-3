@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using Unity.VisualScripting;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,11 +17,14 @@ public class PlayerMovement : MonoBehaviour
     public UnityEvent OnLandEvent;
     bool doubleJump;
     public GameManager manager;
+    float prevY;
+    float prevprevY;
+    int counter;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
+    { counter = 0;
         doubleJump = false;
         player = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -29,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 		    OnLandEvent = new UnityEvent();
         }
         OnLandEvent.AddListener(Landed);
+        prevprevY = player.transform.position.y;
     }
 
     // Update is called once per frame
@@ -46,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("space") && (!animator.GetBool("jump") || (doubleJump && manager.carrots > 0 )))
         {
             if (!doubleJump) {
+                Debug.Log("Can double jump!");
                 doubleJump = true;
             }
             else if (manager.carrots > 0) {
@@ -55,10 +61,7 @@ public class PlayerMovement : MonoBehaviour
             }
             player.AddForce(Vector2.up * 2250);
             animator.SetBool("jump",true);
-            Debug.Log("space key was pressed");
         }
-
-        
     }
 
     void FixedUpdate()
@@ -82,17 +85,28 @@ public class PlayerMovement : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+        counter = (counter+1)%5;
+        if (counter == 0){
+            Debug.Log("1");
+        if (!prevY.IsUnityNull()) {
+            Debug.Log("2");
+            prevprevY = prevY;
+        }
+        Debug.Log("3");
+        prevY = player.transform.position.y;}
+        if (animator.GetBool("jump") && !prevY.IsUnityNull() && prevY == player.transform.position.y && prevY == prevprevY) {
+            Debug.Log("Stuck jumping!");
+            Landed();
+        }
 	}
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("OnCollisionEnter2D");
     }
 
     public void Landed() {
         animator.SetBool("jump", false);
         doubleJump = false;
-        Debug.Log("Landed");
     }
 
 

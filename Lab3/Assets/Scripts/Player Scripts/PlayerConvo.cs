@@ -16,20 +16,17 @@ public class PlayerConvo : MonoBehaviour
     void Update()
     { 
         if (noDoubleClick && Input.GetMouseButtonDown(0)) {
-            Debug.Log("3");
             noDoubleClick = false;
             manager.SkipLine();
 
         }
         if (Input.GetMouseButtonUp(0)) {
-            Debug.Log("4");
             noDoubleClick = true;
         }
         
     }
 
     void Intro() {
-        Debug.Log("1");
         manager.StartDialogue(intro.dialogue,0,"Bunny");
         manager.intro = false;
 
