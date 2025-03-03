@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public GameManager manager;
     float prevY;
     float prevprevY;
+    float firstprevY;
     int counter;
 
 
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         }
         OnLandEvent.AddListener(Landed);
         prevprevY = player.transform.position.y;
+        firstprevY = prevprevY;
     }
 
     // Update is called once per frame
@@ -85,16 +87,17 @@ public class PlayerMovement : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
-        counter = (counter+1)%5;
+        counter = (counter+1)%10;
         if (counter == 0){
             Debug.Log("1");
         if (!prevY.IsUnityNull()) {
             Debug.Log("2");
+            firstprevY = prevprevY;
             prevprevY = prevY;
         }
         Debug.Log("3");
         prevY = player.transform.position.y;}
-        if (animator.GetBool("jump") && !prevY.IsUnityNull() && prevY == player.transform.position.y && prevY == prevprevY) {
+        if (animator.GetBool("jump") && !prevY.IsUnityNull() && prevY == player.transform.position.y && prevY == prevprevY && firstprevY == prevY) {
             Debug.Log("Stuck jumping!");
             Landed();
         }
