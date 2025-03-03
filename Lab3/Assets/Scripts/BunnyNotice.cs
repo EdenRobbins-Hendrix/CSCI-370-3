@@ -36,7 +36,7 @@ public class BunnyNotice : MonoBehaviour
         canvas.transform.position = new Vector3(canvas.transform.position.x, canvas.transform.position.y + 0.75f);
         use.transform.SetParent(canvas.transform);
         use.transform.position = canvas.transform.position;
-        Destroy(canvas, 3.5f);
+        Destroy(canvas.gameObject, 3.5f);
      }   
     }
 
